@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fafafb;
+  --purple: #4300af;
+  --blue-light: #04d4c3;
+  --purple-dark: #36008d;
+  --gray: #0a0a0a;
+  --black: black;
+}
+
+body {
+  background: linear-gradient(to bottom, var(--purple), var(--black));
+  height: 100vh;
+  font-family: "promt", sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+/*PERFIL*/
+
+.perfil {
+  color: var(--white);
+}
+
+#h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil span {
+  color: var(--white);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fecha {
+  color: var(--white);
+  padding: 50px 0 50px 0;
+}
+
+/*AGREGAR TAREA*/
+
+.agregar-tarea {
+  background-color: var(--gray);
+  border-radius: 15px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 70px;
+  margin: 40px 0;
+}
+
+.agregar-tarea input {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  background-color: var(--gray);
+  font-size: medium;
+}
+
+.agregar-tarea i {
+  font-size: 50px;
+  color: var(--purple-dark);
+}
+
+.agregar-tarea i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.agregar-tarea input::placeholder {
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+/*SECCION TAREA*/
+
+.seccion-tarea h3 {
+  color: var(--white);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-tarea li {
+  display: flex;
+  background-color: var(--gray);
+  border-radius: 15px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+  color: var(--white);
+}
+
+.seccion-tarea i {
+  font-size: 25px;
+}
+
+.seccion-tarea i:hover {
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.seccion-tarea > ul p {
+  font-size: 1.2rem;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: var(--purple);
+}
