@@ -14,8 +14,11 @@
 }
 
 body {
-  background: linear-gradient(to bottom, var(--purple), var(--black));
-  height: 100vh;
+  background-image: url(./archivos/4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: "promt", sans-serif;
 }
 
@@ -38,7 +41,7 @@ body {
   justify-content: center;
 }
 
-.perfil span {
+.perfil h4 {
   color: var(--white);
   letter-spacing: 1px;
   display: flex;
@@ -48,7 +51,11 @@ body {
 
 #fecha {
   color: var(--white);
-  padding: 50px 0 50px 0;
+  font-size: 1.5rem;
+  padding: 40px 0 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*AGREGAR TAREA*/
@@ -76,10 +83,12 @@ body {
 
 .agregar-tarea i {
   font-size: 50px;
-  color: var(--purple-dark);
+  color: var(--white);
+  transition: 1s;
 }
 
 .agregar-tarea i:hover {
+  color: var(--purple-dark);
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -112,6 +121,8 @@ body {
 
 .seccion-tarea i {
   font-size: 25px;
+  color: var(--white);
+  transition: 1s;
 }
 
 .seccion-tarea i:hover {
