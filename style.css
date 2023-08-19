@@ -41,7 +41,7 @@ body {
   justify-content: center;
 }
 
-.perfil h4 {
+.perfil span {
   color: var(--white);
   letter-spacing: 1px;
   display: flex;
